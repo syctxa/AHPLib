@@ -15,7 +15,7 @@ if not _G.Settings then
     ['Keybind'] = 'G'
  }
 end
-if _G.Settings['Intro'] == true then
+
 local PLAYERSERVICE = game:GetService('Players')
 local TWEENSERVICE = game:GetService('TweenService')
 local CONTEXTACTIONSERVICE = game:GetService('ContextActionService')
