@@ -1,5 +1,3 @@
---leaked?
---whould this be skidded?
 local function DestroyYep()
     for x = 1,69 do 
         if game.CoreGui:FindFirstChild("fu8rj82n") then game.CoreGui:FindFirstChild("fu8rj82n"):Destroy() end
@@ -13,12 +11,12 @@ wait(0.069)
 if not _G.Settings then
  _G.Settings = {
     ['Logo'] = 'http://www.roblox.com/asset/?id=7255457572',
-    ['Intro'] = false,
+    ['Intro'] = true,
     ['Keybind'] = 'G'
     ['V'] = 'V2'
  }
 end
-if _
+if _G.Settings['intro'] == true then
 local PLAYERSERVICE = game:GetService('Players')
 local TWEENSERVICE = game:GetService('TweenService')
 local CONTEXTACTIONSERVICE = game:GetService('ContextActionService')
@@ -90,6 +88,7 @@ Tween.Completed:Wait()
 wait(1)
 blur:Destroy()
 IntroFrame:Destroy()
+end
 
 
 local Library = {}
