@@ -10,17 +10,16 @@ wait(0.069)
 
 if not _G.Settings then
  _G.Settings = {
-    ['Logo'] = 'http://www.roblox.com/asset/?id=7255457572',
-    ['Intro'] = true,
+    ['Logo'] = 'http://www.roblox.com/asset/?id=7520362877',
+    ['Intro'] = false,
     ['Keybind'] = 'G'
  }
 end
-
+if _G.Settings['Intro'] == true then
 local PLAYERSERVICE = game:GetService('Players')
 local TWEENSERVICE = game:GetService('TweenService')
 local CONTEXTACTIONSERVICE = game:GetService('ContextActionService')
 local USERINPUTSERVICE = game:GetService('UserInputService')
-
 local LOCALPLAYER = PLAYERSERVICE.LocalPlayer
 
 -- Variables --
@@ -87,7 +86,6 @@ Tween.Completed:Wait()
 wait(1)
 blur:Destroy()
 IntroFrame:Destroy()
-
 
 
 local Library = {}
@@ -354,7 +352,7 @@ function Library:CreateWindow(windowname,windowinfo)
         
         Tab.Name = "Tab"
         Tab.Parent = TabContainer
-        Tab.BackgroundColor3 = Color3.fromRGB(5, 5, 75)
+        Tab.BackgroundColor3 = Color3.fromRGB(204, 167, 0)
         Tab.BorderColor3 = Color3.fromRGB(5, 5, 85)
         Tab.Position = UDim2.new(-0.0250000004, 0, 0, 0)
         Tab.Size = UDim2.new(0, 106, 0, 26)
@@ -435,7 +433,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             LabelHolder.Name = "LabelHolder"
             LabelHolder.Parent = Home
-            LabelHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+            LabelHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             LabelHolder.BorderColor3 = Color3.fromRGB(17, 17, 17)
             LabelHolder.BorderSizePixel = 0
             LabelHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -482,7 +480,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             ButtonHolder.Name = "ButtonHolder"
             ButtonHolder.Parent = Home
-            ButtonHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+            ButtonHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             ButtonHolder.BorderColor3 = Color3.fromRGB(17, 17, 17)
             ButtonHolder.BorderSizePixel = 0
             ButtonHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -533,7 +531,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             ToggleHolder.Name = "ToggleHolder"
             ToggleHolder.Parent = Home
-            ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+            ToggleHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             ToggleHolder.BorderColor3 = Color3.fromRGB(7, 7, 77)
             ToggleHolder.BorderSizePixel = 0
             ToggleHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -596,13 +594,13 @@ function Library:CreateWindow(windowname,windowinfo)
                     ToggleHolder.BackgroundColor3 = Color3.fromRGB(58, 57, 57)
                     ToggleBall:TweenPosition(UDim2.new(0.455, 0,0.158, 0),"Out","Linear",0.1)
                     wait(0.05)
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
                     ToggleBall:TweenPosition(UDim2.new(0.455, 0,0.158, 0),"Out","Linear",0.1)
                 else
                     ToggleHolder.BackgroundColor3 = Color3.fromRGB(58, 57, 57)
                     ToggleBall:TweenPosition(UDim2.new(0.123, 0,0.158, 0),"Out","Linear",0.1)
                     wait(0.05)
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
                     ToggleBall:TweenPosition(UDim2.new(0.123, 0,0.158, 0),"Out","Linear",0.1)
                 end
                 pcall(callback,ToggleEnabled)
@@ -623,7 +621,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             SliderHolder.Name = "SliderHolder"
             SliderHolder.Parent = Home
-            SliderHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+            SliderHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             SliderHolder.BorderColor3 = Color3.fromRGB(17, 16, 16)
             SliderHolder.BorderSizePixel = 0
             SliderHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -726,7 +724,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             TextBoxHolder.Name = "TextBoxHolder"
             TextBoxHolder.Parent = Home
-            TextBoxHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
+            TextBoxHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             TextBoxHolder.BorderColor3 = Color3.fromRGB(17, 16, 66)
             TextBoxHolder.BorderSizePixel = 0
             TextBoxHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -747,7 +745,7 @@ function Library:CreateWindow(windowname,windowinfo)
             TextBoxTitle.TextXAlignment = Enum.TextXAlignment.Left
             
             TextBox.Parent = TextBoxHolder
-            TextBox.BackgroundColor3 = Color3.fromRGB(187, 153, 0)
+            TextBox.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
             TextBox.Position = UDim2.new(0.725694418, 0, 0.115384623, 0)
             TextBox.Size = UDim2.new(0, 72, 0, 20)
             TextBox.Font = Enum.Font.GothamSemibold
@@ -768,7 +766,7 @@ function Library:CreateWindow(windowname,windowinfo)
             end)
             
             TextBox.FocusLost:Connect(function()
-                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(187,157,7)
+                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(189, 154, 0)
                 callback(TextBox.Text)
             end)
             --
