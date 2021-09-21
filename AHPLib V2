@@ -11,7 +11,7 @@ wait(0.069)
 if not _G.Settings then
  _G.Settings = {
     ['Logo'] = 'http://www.roblox.com/asset/?id=7520362877',
-    ['Intro'] = false,
+    ['Intro'] = true,
     ['Keybind'] = 'G'
  }
 end
