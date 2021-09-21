@@ -1,7 +1,7 @@
 # AHPLib V2
 On Delopment
 ```  
-not load string
+loadstring(game:HttpGet(https://raw.githubusercontent.com/soyandrey/AHPLib/main/AHPLib%20V2))()
 ```  
 **functions**
 
@@ -20,7 +20,7 @@ not load string
 ### Example
 ```lua
 --for getting the Lib
-local GUI = loadstring(game:HttpGet(not load string))()
+local GUI = loadstring(game:HttpGet(https://raw.githubusercontent.com/soyandrey/AHPLib/main/AHPLib%20V2))()
 --put the Tile in "Name" and the description in "Description" 
 local UI = GUI:CreateWindow("Name","Description")
 --put the name of your page in "Page" put the Title of the page in "Page Title" put the page number in "1" like 1 2 3 4, if you want to put the page when you start it "true"
