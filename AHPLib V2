@@ -13,10 +13,9 @@ if not _G.Settings then
     ['Logo'] = 'http://www.roblox.com/asset/?id=7255457572',
     ['Intro'] = true,
     ['Keybind'] = 'G'
-    ['V'] = 'V2'
  }
 end
-if _G.Settings['intro'] == true then
+
 local PLAYERSERVICE = game:GetService('Players')
 local TWEENSERVICE = game:GetService('TweenService')
 local CONTEXTACTIONSERVICE = game:GetService('ContextActionService')
@@ -88,7 +87,7 @@ Tween.Completed:Wait()
 wait(1)
 blur:Destroy()
 IntroFrame:Destroy()
-end
+
 
 
 local Library = {}
