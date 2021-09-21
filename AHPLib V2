@@ -120,7 +120,7 @@ function Library:CreateWindow(windowname,windowinfo)
     fu8rj82n.ResetOnSpawn = false
     
     Frame.Parent = fu8rj82n
-    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 60)
+    Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     --BackgroundColor3 = Color3.fromRGB(0, 0, 60)
     Frame.BorderColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderSizePixel = 0
@@ -132,7 +132,7 @@ function Library:CreateWindow(windowname,windowinfo)
     
     DashBoard.Name = "DashBoard"
     DashBoard.Parent = Frame
-    DashBoard.BackgroundColor3 = Color3.fromRGB(5, 5, 75)
+    DashBoard.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
     DashBoard.BorderColor3 = Color3.fromRGB(5, 5, 85)
     DashBoard.Position = UDim2.new(0.0185185205, 0, 0.16842106, 0)
     DashBoard.Size = UDim2.new(0, 107, 0, 223)
@@ -143,9 +143,9 @@ function Library:CreateWindow(windowname,windowinfo)
     
     TabContainer.Name = "TabContainer"
     TabContainer.Parent = DashBoard
-    TabContainer.BackgroundColor3 = Color3.fromRGB(5, 5, 75)
+    TabContainer.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
     TabContainer.BackgroundTransparency = 1.000
-    TabContainer.BorderColor3 = Color3.fromRGB(5, 5, 85)
+    TabContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TabContainer.BorderSizePixel = 0
     TabContainer.Position = UDim2.new(0.0280373823, 0, 0.0391304344, 0)
     TabContainer.Size = UDim2.new(0, 100, 0, 214)
@@ -158,7 +158,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
     PageContainer.Name = "PageContainer"
     PageContainer.Parent = Frame
-    PageContainer.BackgroundColor3 = Color3.fromRGB(5, 5, 75)
+    PageContainer.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
     PageContainer.BorderColor3 = Color3.fromRGB(5, 5, 85)
     PageContainer.Position = UDim2.new(0.282407403, 0, 0.16842106, 0)
     PageContainer.Size = UDim2.new(0, 299, 0, 223)
@@ -177,6 +177,39 @@ function Library:CreateWindow(windowname,windowinfo)
     Logo.Position = UDim2.new(0, 0, -0.0175438616, 0)
     Logo.Size = UDim2.new(0, 47, 0, 53)
     Logo.Image = _G.Settings['Logo']
+
+    Logo.MouseEnter:Connect(function()
+        Logo.Size = UDim2.new(0, 51,0, 50)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 56,0, 55)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 61,0, 60)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 66,0, 65)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 71,0, 70)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 73, 0, 69)
+        wait(0.03)
+    end)
+    
+    Logo.MouseLeave:Connect(function()
+        Logo.Size = UDim2.new(0, 73, 0, 69)	
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 71,0, 70)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 66,0, 65)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 61,0, 60)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 56,0, 55)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 51,0, 50)
+        wait(0.03)
+        Logo.Size = UDim2.new(0, 51,0, 50)
+        wait(0.03)
+    
+    end)
 
     Title.Name = "Title"
     Title.Parent = Frame
@@ -236,7 +269,7 @@ function Library:CreateWindow(windowname,windowinfo)
 		YepTitle.BackgroundTransparency = 0.5
 		YepTitle.TextTransparency = 0.3
 		-- cre
-		Cre.ImageColor3 = Color3.fromRGB(7, 46, 255)
+		Cre.ImageColor3 = Color3.fromRGB(73, 73, 73)
 		wait(0.05)
 		YepTitle.BackgroundTransparency = 0
 		YepTitle.TextTransparency = 0
@@ -404,7 +437,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             LabelHolder.Name = "LabelHolder"
             LabelHolder.Parent = Home
-            LabelHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            LabelHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             LabelHolder.BorderColor3 = Color3.fromRGB(17, 17, 17)
             LabelHolder.BorderSizePixel = 0
             LabelHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -451,7 +484,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             ButtonHolder.Name = "ButtonHolder"
             ButtonHolder.Parent = Home
-            ButtonHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            ButtonHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             ButtonHolder.BorderColor3 = Color3.fromRGB(17, 17, 17)
             ButtonHolder.BorderSizePixel = 0
             ButtonHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -502,7 +535,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             ToggleHolder.Name = "ToggleHolder"
             ToggleHolder.Parent = Home
-            ToggleHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             ToggleHolder.BorderColor3 = Color3.fromRGB(7, 7, 77)
             ToggleHolder.BorderSizePixel = 0
             ToggleHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -562,16 +595,16 @@ function Library:CreateWindow(windowname,windowinfo)
             ToggleButton.MouseButton1Down:Connect(function()
                 ToggleEnabled = not ToggleEnabled
                 if ToggleEnabled then 
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(6,6,66)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(58, 57, 57)
                     ToggleBall:TweenPosition(UDim2.new(0.455, 0,0.158, 0),"Out","Linear",0.1)
                     wait(0.05)
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(7,7,17)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
                     ToggleBall:TweenPosition(UDim2.new(0.455, 0,0.158, 0),"Out","Linear",0.1)
                 else
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(16,16,16)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(58, 57, 57)
                     ToggleBall:TweenPosition(UDim2.new(0.123, 0,0.158, 0),"Out","Linear",0.1)
                     wait(0.05)
-                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(7,7,17)
+                    ToggleHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
                     ToggleBall:TweenPosition(UDim2.new(0.123, 0,0.158, 0),"Out","Linear",0.1)
                 end
                 pcall(callback,ToggleEnabled)
@@ -592,7 +625,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             SliderHolder.Name = "SliderHolder"
             SliderHolder.Parent = Home
-            SliderHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            SliderHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             SliderHolder.BorderColor3 = Color3.fromRGB(17, 16, 16)
             SliderHolder.BorderSizePixel = 0
             SliderHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -618,7 +651,7 @@ function Library:CreateWindow(windowname,windowinfo)
             
             SliderButton.Name = "SliderButton"
             SliderButton.Parent = SliderHolder
-            SliderButton.BackgroundColor3 = Color3.fromRGB(5, 5, 255)
+            SliderButton.BackgroundColor3 = Color3.fromRGB(177, 174, 0)
             SliderButton.BorderColor3 = Color3.fromRGB(5, 5, 85)
             SliderButton.BorderSizePixel = 0
             SliderButton.Position = UDim2.new(0, 8, 0, 17)
@@ -667,14 +700,14 @@ function Library:CreateWindow(windowname,windowinfo)
                     SliderNumber.Text = Value
                     Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
                         callback(SliderNumber.Text)
-                        SliderHolder.BackgroundColor3 = Color3.fromRGB(14,14,14)
+                        SliderHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
                     SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
                 end)
                 releaseconnection = uis.InputEnded:Connect(function(Mouse)
                     if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
                         Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
                             callback(SliderNumber.Text)
-                            SliderHolder.BackgroundColor3 = Color3.fromRGB(7,7,17)
+                            SliderHolder.BackgroundColor3 = Color3.fromRGB(255, 208, 0)
                         SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
                         moveconnection:Disconnect()
                         releaseconnection:Disconnect()
@@ -695,7 +728,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             TextBoxHolder.Name = "TextBoxHolder"
             TextBoxHolder.Parent = Home
-            TextBoxHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            TextBoxHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             TextBoxHolder.BorderColor3 = Color3.fromRGB(17, 16, 66)
             TextBoxHolder.BorderSizePixel = 0
             TextBoxHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -716,7 +749,7 @@ function Library:CreateWindow(windowname,windowinfo)
             TextBoxTitle.TextXAlignment = Enum.TextXAlignment.Left
             
             TextBox.Parent = TextBoxHolder
-            TextBox.BackgroundColor3 = Color3.fromRGB(5, 5, 255)
+            TextBox.BackgroundColor3 = Color3.fromRGB(187, 153, 0)
             TextBox.Position = UDim2.new(0.725694418, 0, 0.115384623, 0)
             TextBox.Size = UDim2.new(0, 72, 0, 20)
             TextBox.Font = Enum.Font.GothamSemibold
@@ -733,11 +766,11 @@ function Library:CreateWindow(windowname,windowinfo)
             TextBoxHolderCorner.Parent = TextBoxHolder
 
             TextBox.Focused:Connect(function()
-                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(0,0,60)
+                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(255, 225, 93)
             end)
             
             TextBox.FocusLost:Connect(function()
-                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(7,7,77)
+                TextBoxHolder.BackgroundColor3 = Color3.fromRGB(187,157,7)
                 callback(TextBox.Text)
             end)
             --
@@ -759,7 +792,7 @@ function Library:CreateWindow(windowname,windowinfo)
 
             DropdownHolder.Name = "DropdownHolder"
             DropdownHolder.Parent = Home
-            DropdownHolder.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            DropdownHolder.BackgroundColor3 = Color3.fromRGB(250, 204, 0)
             DropdownHolder.BorderColor3 = Color3.fromRGB(17, 17, 17)
             DropdownHolder.BorderSizePixel = 0
             DropdownHolder.Position = UDim2.new(0.0167785231, 0, 0, 0)
@@ -804,7 +837,7 @@ function Library:CreateWindow(windowname,windowinfo)
             DropdownContainer.Name = "DropdownContainer"
             DropdownContainer.Parent = DropdownHolder
             DropdownContainer.Active = true
-            DropdownContainer.BackgroundColor3 = Color3.fromRGB(7, 7, 77)
+            DropdownContainer.BackgroundColor3 = Color3.fromRGB(202, 165, 0)
             DropdownContainer.BorderColor3 = Color3.fromRGB(17, 17, 17)
             DropdownContainer.BorderSizePixel = 0
             DropdownContainer.ClipsDescendants = true
@@ -929,7 +962,8 @@ function Library:CreateWindow(windowname,windowinfo)
                 end) -- droplist ended
             end
         end
-        --
+        --XD
+
         return PageElements
     end
     return PageYep
