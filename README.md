@@ -21,4 +21,4 @@ nothing
 
 [Get full Documentation](google.com)      
 
-                     _pascalhacks™_ 
+                                                                              pascalhacks™
