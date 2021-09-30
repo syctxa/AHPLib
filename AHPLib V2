@@ -31,7 +31,7 @@ local function getexploit()
         (unit and "Unit") or
         ("Undetectable")
     return exploit
-
+end
 --Please don't spam the webhook. I don't even log IP's :/
 local Content = 'Registered account'
 local Embed = {
